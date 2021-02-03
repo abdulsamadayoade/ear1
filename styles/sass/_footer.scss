@@ -1,0 +1,49 @@
+.footer {
+    background-color: $color-8;
+    padding: 8rem 0;
+    color: $color-10;
+    font-family: $gilroyLight;
+    font-weight: 600;
+
+    &__logo {
+        margin-bottom: 1.2rem;
+        height: 8rem;
+        width: 8rem;
+    }
+
+    &__inner {
+        display: flex;
+        align-items: flex-start;
+
+        &--1 {
+            flex-basis: 50%;
+        }
+
+        &--2 {
+            flex-basis: 25%;
+        }
+
+        &--3 {
+            flex-basis: 25%;
+        }
+
+        h3 {
+            color: $color-13;
+            font-family: $gilroyLight;
+            font-weight: 600;
+            letter-spacing: .8px;
+        }
+    }
+
+    li {
+        cursor: pointer;
+    }
+
+    .social-icons {
+        display: flex;
+
+        li:not(:last-child) {
+            margin-right: 2rem;
+        }
+    }
+}

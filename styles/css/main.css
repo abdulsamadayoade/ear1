@@ -1,0 +1,494 @@
+/*-------------------------- FONTS ---------------------------*/
+@font-face {
+  font-family: 'Gilroy-Light';
+  src: url("../../textfonts/Gilroy-Light.ttf") format("truetype");
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Gilroy-Regular';
+  src: url("../../textfonts/Gilroy-Regular.ttf") format("truetype");
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Gilroy-Medium';
+  src: url("../../textfonts/Gilroy-Medium.ttf") format("truetype");
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Gilroy-Bold';
+  src: url("../../textfonts/Gilroy-Bold.ttf") format("truetype");
+  font-style: normal;
+  font-display: swap;
+}
+
+/*-------------------------- VARIABLES ---------------------------*/
+/*-------------------------- PRESETS ---------------------------*/
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+  text-rendering: optimizeLegibility;
+}
+
+@media only screen and (max-width: 62.5em) {
+  html {
+    font-size: 56.25%;
+  }
+}
+
+@media only screen and (max-width: 56.25em) {
+  html {
+    font-size: 54%;
+  }
+}
+
+@media only screen and (max-width: 37.5em) {
+  html {
+    font-size: 51%;
+  }
+}
+
+@media only screen and (min-width: 112.5em) {
+  html {
+    font-size: 75%;
+  }
+}
+
+body {
+  font-family: "Gilroy-Medium", sans-serif;
+  font-size: 1.6rem;
+  color: #6A6A70;
+  line-height: 1.7;
+}
+
+.container {
+  max-width: 120rem;
+  margin: 0 auto;
+  padding: 0 2.4rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+/*-------------------------- TYPOGRAPHY ---------------------------*/
+.heading {
+  font-family: "Gilroy-Bold", sans-serif;
+  color: #39393F;
+  margin-bottom: 2.2rem;
+}
+
+.h-1 {
+  font-size: 4.3rem;
+  line-height: 1.3;
+}
+
+.h-2 {
+  font-size: 3.2rem;
+  line-height: 1.3;
+  margin-bottom: 2.6rem;
+}
+
+.description {
+  font-size: 1.7rem;
+}
+
+.green {
+  color: #00BF69;
+  font-style: italic;
+}
+
+.mb-12 {
+  margin-bottom: 1.2rem;
+}
+
+.mb-15 {
+  margin-bottom: 1.5rem;
+}
+
+.mb-22 {
+  margin-bottom: 2.2rem;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 8rem;
+}
+
+.nav .logo--image {
+  height: 8rem;
+  width: 8rem;
+}
+
+.nav--list {
+  display: flex;
+}
+
+.nav--item:not(:last-child) {
+  margin: 0 2.5rem;
+}
+
+.nav--link {
+  color: inherit;
+}
+
+.nav .menu {
+  background: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  display: none;
+}
+
+.hero {
+  padding: 8rem 0;
+  position: relative;
+}
+
+.hero__text-box {
+  max-width: 75rem;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.hero__text-box .description {
+  max-width: 80%;
+  margin: 0 auto;
+}
+
+.hero__app-download {
+  max-width: 35rem;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 6rem;
+}
+
+.hero__app-download button {
+  background-color: #00BF69;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  border-radius: 3px;
+  height: 5rem;
+  width: 16rem;
+  padding: 2rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+  font-family: inherit;
+}
+
+.hero__app-download button div {
+  display: flex;
+  flex-direction: column;
+  color: #FFFFFF;
+}
+
+.hero__app-download button span {
+  font-size: 1.35rem;
+}
+
+.hero__app-download button .store {
+  font-family: "Gilroy-Regular", sans-serif;
+  font-size: 1.4rem;
+  font-weight: 600;
+  letter-spacing: .5px;
+}
+
+.hero__influencer {
+  display: block;
+  height: 8rem;
+  width: 8rem;
+  border-radius: 50%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: absolute;
+}
+
+.hero .davido {
+  background-image: url("../../images/davido.png");
+  border: 3px solid rgba(178, 155, 195, 0.5);
+  top: 16.5rem;
+  left: 8.5rem;
+}
+
+.hero .prosper {
+  background-image: url("../../images/prosper.png");
+  border: 3px solid #C0F8D1;
+  top: 25%;
+  right: 5%;
+}
+
+.hero .sola {
+  background-image: url("../../images/sola.png");
+  border: 3px solid rgba(0, 86, 191, 0.2);
+  bottom: -6%;
+  left: 15%;
+}
+
+.hero .moe {
+  background-image: url("../../images/moe.png");
+  border: 3px solid rgba(242, 214, 157, 0.5);
+  bottom: -3%;
+  right: 13%;
+}
+
+main {
+  margin: 3rem 0;
+  padding: 12rem 0;
+}
+
+.section {
+  display: flex;
+  justify-content: space-between;
+  padding: 7rem 0;
+}
+
+.section__text-box {
+  flex-basis: 48%;
+  padding: 5rem 3rem;
+}
+
+.section__image-box img {
+  width: 100%;
+}
+
+.section .description {
+  line-height: 1.8;
+}
+
+.zero img {
+  border-top-left-radius: 50px;
+  border-top-right-radius: 50px;
+}
+
+.better {
+  flex-direction: column;
+  align-items: center;
+}
+
+.better .section__text-box {
+  text-align: center;
+}
+
+.better .description {
+  max-width: 70%;
+  margin: 0 auto;
+}
+
+.better img {
+  border-top-left-radius: 50px;
+  border-top-right-radius: 50px;
+}
+
+.build {
+  display: flex;
+  justify-content: space-between;
+  background-color: #00BF69;
+  border-radius: 20px;
+  color: #FFFFFF;
+  margin-top: 4rem;
+  padding: 7rem 5rem;
+}
+
+.build h2 {
+  color: #FFFFFF;
+}
+
+.build button {
+  background-color: #39393F;
+  margin: 0 1.2rem;
+}
+
+.build div:not(:first-child) {
+  margin: 0;
+}
+
+.footer {
+  background-color: #39393F;
+  padding: 8rem 0;
+  color: #8E8E95;
+  font-family: "Gilroy-Light", sans-serif;
+  font-weight: 600;
+}
+
+.footer__logo {
+  margin-bottom: 1.2rem;
+  height: 8rem;
+  width: 8rem;
+}
+
+.footer__inner {
+  display: flex;
+  align-items: flex-start;
+}
+
+.footer__inner--1 {
+  flex-basis: 50%;
+}
+
+.footer__inner--2 {
+  flex-basis: 25%;
+}
+
+.footer__inner--3 {
+  flex-basis: 25%;
+}
+
+.footer__inner h3 {
+  color: #FFFFFF;
+  font-family: "Gilroy-Light", sans-serif;
+  font-weight: 600;
+  letter-spacing: .8px;
+}
+
+.footer li {
+  cursor: pointer;
+}
+
+.footer .social-icons {
+  display: flex;
+}
+
+.footer .social-icons li:not(:last-child) {
+  margin-right: 2rem;
+}
+
+@media screen and (max-width: 940px) {
+  .hero .davido {
+    left: 4rem;
+  }
+  .hero .prosper {
+    top: 5%;
+    right: 3%;
+  }
+  .hero .sola {
+    bottom: -10%;
+    left: 7%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .logo {
+    position: relative;
+    z-index: 12;
+  }
+  .nav--list {
+    background-color: #FFFFFF;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 35vh;
+    padding: 4rem 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    transform: translateY(-30vh);
+    transition: transform .5s;
+    z-index: 10;
+  }
+  .nav--list.active {
+    transform: translateY(0);
+  }
+  .nav--item:not(:last-child) {
+    margin-bottom: 2.2rem !important;
+  }
+  .nav .menu {
+    display: block;
+    position: relative;
+    z-index: 12;
+  }
+  .hero__app-download {
+    margin-top: 3rem !important;
+    max-width: 40rem;
+  }
+  .hero__app-download button {
+    padding: 3rem 2rem;
+    width: 20rem;
+    margin: 0 1rem;
+  }
+  .hero .davido {
+    left: 1rem;
+  }
+  .section {
+    flex-direction: column;
+    padding: 4rem 0;
+  }
+  .section__text-box {
+    text-align: center;
+  }
+  .section__image-box {
+    display: flex;
+    justify-content: center;
+  }
+  .section__image-box img {
+    width: auto;
+  }
+  .section.zero {
+    flex-direction: column-reverse;
+  }
+  .section.build {
+    padding: 4rem 5rem;
+  }
+  .footer__inner {
+    flex-direction: column;
+  }
+  .footer__inner--1, .footer__inner--2 {
+    margin-bottom: 5rem;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .hero .davido {
+    top: .5rem;
+  }
+  .hero .prosper {
+    top: 2.5%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .h-1 {
+    font-size: 3.5rem;
+    margin-top: 2rem;
+  }
+  .hero .prosper {
+    top: 1.5%;
+  }
+  .hero__app-download {
+    flex-direction: column;
+  }
+  .hero__app-download button {
+    margin-top: 2rem;
+    width: 17rem;
+  }
+  .section__image-box img {
+    width: 100%;
+  }
+  .better .description {
+    max-width: 100%;
+  }
+}
