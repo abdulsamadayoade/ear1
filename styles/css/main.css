@@ -275,15 +275,12 @@ main {
   max-width: 100%;
   object-fit: cover;
   height: auto;
+  border-top-left-radius: 50px;
+  border-top-right-radius: 50px;
 }
 
 .section .description {
   line-height: 1.8;
-}
-
-.zero img {
-  border-top-left-radius: 50px;
-  border-top-right-radius: 50px;
 }
 
 .better {
@@ -298,11 +295,6 @@ main {
 .better .description {
   max-width: 70%;
   margin: 0 auto;
-}
-
-.better img {
-  border-top-left-radius: 50px;
-  border-top-right-radius: 50px;
 }
 
 .build {
