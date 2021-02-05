@@ -54,6 +54,14 @@
         justify-content: space-around;
         margin-top: 6rem;
 
+        .apple {
+            padding: 1.1rem 2rem;
+        }
+
+        .google {
+            padding: 1.2rem 2rem;
+        }
+
         button {
             background-color: $color-4;
             border: none;
@@ -62,7 +70,6 @@
             border-radius: 3px;
             // height: 5rem;
             width: 16rem;
-            padding: 1.5rem 2rem;
             display: flex;
             align-items: center;
             justify-content: space-between;
