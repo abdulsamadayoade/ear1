@@ -186,20 +186,13 @@ ul {
   margin-top: 6rem;
 }
 
-.hero__app-download .apple {
-  padding: 1.1rem 2rem;
-}
-
-.hero__app-download .google {
-  padding: 1.2rem 2rem;
-}
-
 .hero__app-download button {
   background-color: #00BF69;
   border: none;
   cursor: pointer;
   outline: none;
   border-radius: 3px;
+  padding: 1.2rem 2rem;
   width: 16rem;
   display: flex;
   align-items: center;
@@ -331,14 +324,6 @@ main {
 
 .build div:not(:first-child) {
   margin: 0;
-}
-
-.build .apple {
-  padding: 1.1rem 2rem;
-}
-
-.build .google {
-  padding: 1.2rem 2rem;
 }
 
 .footer {
